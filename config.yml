@@ -1,0 +1,39 @@
+global:
+  scrape_interval: 1m  #数据更新间隔
+  scrape_timeout: 30s  #请求es获取数据超时时间
+  search_from: 1  #es query from
+  search_size: 100   #Size is the number of search hits to return. and es query size
+  log_level: DEBUG
+
+#分组示例+query示例
+metrics:
+  - name: test2
+    datasource: http://xxxx:9200
+    index: nginx-log
+    basic_auth:
+      username: xxxxx
+      password: xxxxx
+    timerange: 1m
+    offsetrange: 0m
+    metric: request_status
+    project: nginx
+    statistics_type: last
+    aggregation:
+      - domain
+      - status
+    filter:
+      env: test
+  - name: test6
+    datasource: http://xxxx:9200
+    index: nginx-log
+    basic_auth:
+      username: xxxxx
+      password: xxxxx
+    timerange: 1m
+    offsetrange: 0m
+    metric: log_query_exp
+    project: nginx
+    statistics_type: last
+    filter:
+      env: test
+

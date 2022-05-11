@@ -1,0 +1,55 @@
+2022/05/11 11:10:25 [I] log_exporter.go:191] Listening on address :9117
+2022/05/11 11:10:31 [D] log_exporter.go:254] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 11:10:31 [D] log_exporter.go:315] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 11:10:31 [D] log_exporter.go:276] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-15m","include_lower":true,"include_upper":true,"to":"now-15m"}}},"should":{"match":{"app":{"query":"nginx"}}}}}
+2022/05/11 11:10:32 [D] log_exporter.go:339] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-1m","include_lower":true,"include_upper":true,"to":"now-1m"}}},"should":{"match":{"app":{"query":"nginx"}}}}}
+2022/05/11 11:10:32 [D] log_exporter.go:383] typeName:  last aggName:  status
+2022/05/11 11:10:32 [D] log_exporter.go:287] 任务: [ test6 ] Found a total of  0 Post
+2022/05/11 11:10:32 [D] log_exporter.go:365] 任务: [ test2 ] Found a total of  50 Post
+2022/05/11 11:12:01 [I] log_exporter.go:191] Listening on address :9117
+2022/05/11 11:12:02 [D] log_exporter.go:254] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 11:12:03 [D] log_exporter.go:315] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 11:12:03 [D] log_exporter.go:276] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-15m","include_lower":true,"include_upper":true,"to":"now-15m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:12:03 [D] log_exporter.go:339] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-1m","include_lower":true,"include_upper":true,"to":"now-1m"}}},"should":{"match":{"app":{"query":"nginx"}}}}}
+2022/05/11 11:12:03 [D] log_exporter.go:383] typeName:  last aggName:  status
+2022/05/11 11:12:03 [D] log_exporter.go:287] 任务: [ test6 ] Found a total of  48 Post
+2022/05/11 11:12:03 [D] log_exporter.go:365] 任务: [ test2 ] Found a total of  48 Post
+2022/05/11 11:12:45 [I] log_exporter.go:191] Listening on address :9117
+2022/05/11 11:12:46 [D] log_exporter.go:315] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 11:12:47 [D] log_exporter.go:339] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"app":{"query":"nginx"}}}}}
+2022/05/11 11:12:47 [D] log_exporter.go:383] typeName:  last aggName:  status
+2022/05/11 11:12:47 [D] log_exporter.go:254] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 11:12:47 [D] log_exporter.go:365] 任务: [ test2 ] Found a total of  43 Post
+2022/05/11 11:12:47 [D] log_exporter.go:276] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:12:47 [D] log_exporter.go:287] 任务: [ test6 ] Found a total of  43 Post
+2022/05/11 11:13:42 [I] log_exporter.go:191] Listening on address :9117
+2022/05/11 11:13:44 [D] log_exporter.go:315] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 11:13:44 [D] log_exporter.go:254] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 11:13:44 [D] log_exporter.go:276] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:13:44 [D] log_exporter.go:339] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:13:44 [D] log_exporter.go:383] typeName:  last aggName:  status
+2022/05/11 11:13:44 [D] log_exporter.go:365] 任务: [ test2 ] Found a total of  44 Post
+2022/05/11 11:13:44 [D] log_exporter.go:287] 任务: [ test6 ] Found a total of  44 Post
+2022/05/11 11:13:51 [D] log_exporter.go:254] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 11:13:51 [D] log_exporter.go:315] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 11:13:51 [D] log_exporter.go:339] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:13:51 [D] log_exporter.go:383] typeName:  last aggName:  status
+2022/05/11 11:13:51 [D] log_exporter.go:276] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:13:51 [D] log_exporter.go:365] 任务: [ test2 ] Found a total of  44 Post
+2022/05/11 11:13:51 [D] log_exporter.go:287] 任务: [ test6 ] Found a total of  44 Post
+2022/05/11 11:13:52 [D] log_exporter.go:315] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 11:13:52 [D] log_exporter.go:254] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 11:13:52 [D] log_exporter.go:339] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:13:52 [D] log_exporter.go:383] typeName:  last aggName:  status
+2022/05/11 11:13:52 [D] log_exporter.go:365] 任务: [ test2 ] Found a total of  44 Post
+2022/05/11 11:13:52 [D] log_exporter.go:276] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 11:13:52 [D] log_exporter.go:287] 任务: [ test6 ] Found a total of  44 Post
+2022/05/11 11:19:49 [I] log_exporter.go:198] Listening on address :9117
+2022/05/11 14:47:19 [I] log_exporter.go:196] Listening on address :9117
+2022/05/11 14:47:25 [D] log_exporter.go:260] 任务:[ test6 ] connect es return code  403  and es version  
+2022/05/11 14:47:25 [D] log_exporter.go:322] 任务:[ test2 ] connect es return code  403  and es version  
+2022/05/11 14:47:25 [D] log_exporter.go:282] searchRequest-> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 14:47:25 [D] log_exporter.go:346] searchRequest -> body: {"bool":{"filter":{"range":{"@timestamp":{"from":"now-1m-0m","include_lower":true,"include_upper":true,"to":"now-0m"}}},"should":{"match":{"env":{"query":"test"}}}}}
+2022/05/11 14:47:25 [D] log_exporter.go:390] typeName:  last aggName:  status
+2022/05/11 14:47:25 [D] log_exporter.go:293] 任务: [ test6 ] Found a total of  47 Post
+2022/05/11 14:47:25 [D] log_exporter.go:372] 任务: [ test2 ] Found a total of  47 Post
