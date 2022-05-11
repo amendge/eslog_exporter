@@ -186,9 +186,9 @@ func main() {
 	http.HandleFunc("/health", func(w http.ResponseWriter, r *http.Request) { http.Error(w, "OK", http.StatusOK) })
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte(`<html>
-			<head><title>Nio Log Exporter</title></head>
+			<head><title>Log Exporter</title></head>
 			<body>
-			<h1>NIO Log Exporter</h1>
+			<h1>Log Exporter</h1>
 			<p><a href="/metrics">Metrics</a></p>
 			</body>
 			</html>`))
